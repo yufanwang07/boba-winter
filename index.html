@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winter Boba</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #222;
+        }
+
+        .boba-container {
+            position: relative;
+            text-align: center;
+        }
+
+        .boba-image {
+            width: 200px;
+            height: auto;
+            transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out, brightness 0.3s ease-in-out;
+        }
+
+        .boba-image:hover {
+            transform: scale(1.1) rotate(10deg); 
+            filter: brightness(1.6) drop-shadow(0 0 30px rgba(255, 255, 255, 0.9)) 
+                    drop-shadow(0 0 40px rgba(255, 255, 255, 0.8)) 
+                    drop-shadow(0 0 60px rgba(255, 255, 255, 0.7));
+        }
+    </style>
+</head>
+<body>
+    <div class="boba-container">
+        <img 
+            class="boba-image" 
+            src="https://cdn.creazilla.com/cliparts/6193614/bubble-tea-clipart-xl.png"
+            alt="Boba Tea">
+    </div>
+</body>
+</html>
